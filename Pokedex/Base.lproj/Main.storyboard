@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,17 +29,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-gW-zKt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PokemonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-UR-bze">
-                                        <rect key="frame" x="0.0" y="15" width="375" height="62"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzy-p7-GMJ">
+                                        <rect key="frame" x="120" y="39" width="134" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="9yD-VF-Hbe"/>
+                                            <constraint firstAttribute="height" constant="30" id="Pef-L3-MBI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-Rf-Bbk">
+                                        <rect key="frame" x="341" y="43" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="RUm-xf-nDR"/>
+                                            <constraint firstAttribute="width" constant="26" id="whe-IX-NN0"/>
+                                        </constraints>
+                                        <state key="normal" image="music.png"/>
+                                        <connections>
+                                            <action selector="musicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SyV-LW-MpA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="4bH-UR-bze" secondAttribute="trailing" id="2Vn-38-qcr"/>
-                                    <constraint firstAttribute="bottom" secondItem="4bH-UR-bze" secondAttribute="bottom" id="OqU-48-DGv"/>
-                                    <constraint firstItem="4bH-UR-bze" firstAttribute="top" secondItem="LyH-gW-zKt" secondAttribute="top" constant="15" id="aaZ-qD-Pa3"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kzy-p7-GMJ" secondAttribute="bottom" constant="8" id="CLP-of-m2p"/>
+                                    <constraint firstAttribute="bottom" secondItem="gbG-Rf-Bbk" secondAttribute="bottom" constant="8" id="Enz-6u-msC"/>
+                                    <constraint firstItem="Kzy-p7-GMJ" firstAttribute="centerX" secondItem="LyH-gW-zKt" secondAttribute="centerX" id="WWf-I1-rgv"/>
                                     <constraint firstAttribute="height" constant="77" id="bGs-y0-tp9"/>
-                                    <constraint firstItem="4bH-UR-bze" firstAttribute="leading" secondItem="LyH-gW-zKt" secondAttribute="leading" id="kds-Yo-hgk"/>
+                                    <constraint firstAttribute="trailing" secondItem="gbG-Rf-Bbk" secondAttribute="trailing" constant="8" id="tmR-Su-5vf"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="n9L-8c-4bM">
@@ -126,7 +149,7 @@
     </scenes>
     <resources>
         <image name="4" width="120" height="120"/>
-        <image name="PokemonLogo" width="2000" height="736"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music.png" width="100" height="100"/>
     </resources>
 </document>
