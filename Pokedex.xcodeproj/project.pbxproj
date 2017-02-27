@@ -19,6 +19,7 @@
 		4CA16BD71E6220BD007ABDA5 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA16BD61E6220BC007ABDA5 /* pokemon.ttf */; };
 		4CA16BDD1E62245D007ABDA5 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA16BDB1E62245D007ABDA5 /* music.mp3 */; };
 		4CA16BDE1E62245D007ABDA5 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA16BDC1E62245D007ABDA5 /* music.png */; };
+		4CA16BE01E6256D3007ABDA5 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA16BDF1E6256D3007ABDA5 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4CA16BD61E6220BC007ABDA5 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		4CA16BDB1E62245D007ABDA5 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		4CA16BDC1E62245D007ABDA5 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		4CA16BDF1E6256D3007ABDA5 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA16BBC1E5EB521007ABDA5 /* ViewController.swift */,
+				4CA16BDF1E6256D3007ABDA5 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				4CA16BD31E5FDD8F007ABDA5 /* PokeCell.swift in Sources */,
 				4CA16BBD1E5EB521007ABDA5 /* ViewController.swift in Sources */,
 				4CA16BBB1E5EB521007ABDA5 /* AppDelegate.swift in Sources */,
+				4CA16BE01E6256D3007ABDA5 /* PokemonDetailVC.swift in Sources */,
 				4CA16BD01E5FC871007ABDA5 /* Pokemon.swift in Sources */,
 				4CA16BD51E602B01007ABDA5 /* csv.swift in Sources */,
 			);
@@ -369,6 +373,7 @@
 				4CA16BCB1E5EB522007ABDA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
